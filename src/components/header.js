@@ -1,16 +1,14 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
 
 const Header = ({ siteTitle }) => (
-  <header
-  >
-    <Link
+  <header className="container">
+    {/* <Link
       to="/"
     >
       Logo
-    </Link>
-  
+    </Link> */}
   </header>
-)
+);
 
-export default Header
+export default Header;
