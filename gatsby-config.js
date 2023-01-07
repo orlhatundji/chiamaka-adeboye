@@ -15,6 +15,12 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "powlanding",
+      },
+    },
     'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     {
