@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#484848",
+        foreground: "#FFF9EC",
       },
       boxShadow: {
         'custom': '0px 6px 10px 2px rgba(16, 16, 17, 0.1)',

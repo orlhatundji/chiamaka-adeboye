@@ -7,6 +7,7 @@ body {
   font-family: "PPGrahamRounded";
   font-weight: 400;
   overflow: hidden;
+  height: 100vh;
   background-color: #FFF9EC;
 }
 
@@ -19,6 +20,14 @@ body {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   /* background-blend-mode: multiply; */
+}
+
+.card {
+  border-radius: 2px;
+}
+.card:hover .mirror {
+  display: block;
+  border-radius: 2px;
 }
 
 @layer base {
@@ -57,11 +66,21 @@ body {
     @apply lg:text-[3.25rem] lg:leading-[4.75rem];
   }
 
+  .card-title {
+    @apply text-[2.5rem] leading-10;
+  }
+
   .subtitle2 {
     @apply lg:text-xl lg:leading-10;
   }
+  .subtitle3 {
+    @apply lg:text-lg lg:leading-[2.38rem];
+  }
   .input {
     @apply ring-0 focus:ring-0 outline-none placeholder-gray-500;
+  }
+  .card {
+    @apply bg-white border-[3px] border-black px-[38px] pt-[43px];
   }
 
   button {
