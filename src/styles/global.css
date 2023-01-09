@@ -65,11 +65,17 @@ body {
   .header1 {
     @apply lg:text-[3.25rem] lg:leading-[4.75rem];
   }
+  .header2 {
+    @apply lg:text-[3rem] lg:leading-[3rem];
+  }
 
   .card-title {
     @apply text-[2.5rem] leading-10;
   }
 
+  .subtitle1 {
+    @apply lg:text-2xl lg:leading-[3rem];
+  }
   .subtitle2 {
     @apply lg:text-xl lg:leading-10;
   }

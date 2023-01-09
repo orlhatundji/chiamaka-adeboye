@@ -8,8 +8,12 @@ const Header = ({ siteTitle }) => (
         <span className="font-semibold">eniola aminu</span>
       </Link>
       <ul className="flex items-center justify-between gap-x-6 text-primary text-base leading-4">
-        <li className="">Work</li>
-        <li className="">About </li>
+        <li className="">
+          <Link to="/">Work</Link>
+        </li>
+        <li className="">
+          <Link to="/about">About</Link>
+        </li>
         <li className="">Resume</li>
       </ul>
     </div>

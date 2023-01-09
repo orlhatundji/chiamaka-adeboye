@@ -2,8 +2,10 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+// Components
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import OtherProjects from "../components/otherProjects";
 
 // Assets
 import todlrImage from "../images/barter.png";
@@ -153,6 +155,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <OtherProjects />
   </Layout>
 );
 
