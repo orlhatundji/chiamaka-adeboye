@@ -9,11 +9,14 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import useWindowDimensions from "./windowDimensionHook";
 
 const OtherProjects = () => {
+  const { width } = useWindowDimensions();
   const [swiperRef, setSwiperRef] = useState(null);
   const nextSlide = () => swiperRef.slideNext();
   const prevSlide = () => swiperRef.slidePrev();
+  
 
   return (
     <>
@@ -38,7 +41,7 @@ const OtherProjects = () => {
           </div>
           <Swiper
             onSwiper={setSwiperRef}
-            slidesPerView={2}
+            slidesPerView={width < 600 ? 1 : 2}
             centeredSlides={false}
             spaceBetween={30}
             pagination={false}
@@ -48,7 +51,7 @@ const OtherProjects = () => {
           >
             <SwiperSlide>
               <div className="">
-                <div className="bg-white border-[3px] border-black px-[38px] pt-[64px] h-[460px] flex items-end overflow-hidden">
+                <div className="bg-white border-[3px] border-black px-[38px] pt-[64px] md:h-[460px] flex items-end overflow-hidden">
                   <StaticImage
                     src="../images/yellowcard2.png"
                     className="max-w-[261px] mx-auto block"
@@ -64,7 +67,7 @@ const OtherProjects = () => {
 
             <SwiperSlide>
               <div className="">
-                <div className="bg-white border-[3px] border-black px-[38px] pt-[64px] h-[460px] flex items-end overflow-hidden">
+                <div className="bg-white border-[3px] border-black px-[38px] pt-[64px] md:h-[460px] flex items-end overflow-hidden">
                   <StaticImage
                     src="../images/afriticket.png"
                     className="max-w-[261px] auto mx-auto block"

@@ -41,7 +41,7 @@ const data = [
 const IndexPage = () => (
   <Layout>
     <div className="border-b border-black">
-      <div className="container flex justify-between items-center pt-14 pb-[14px]">
+      <div className="container lg:flex justify-between items-center pt-14 pb-[14px]">
         <div className="">
           <h1 className="header1 text-black max-w-[766px]">
             I’m Eniola, Product Designer from Lagos, Nigeria
