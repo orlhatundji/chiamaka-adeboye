@@ -40,7 +40,7 @@ body {
     /* font-extralight */
     font-family: "PPGrahamRounded";
     font-weight: 400;
-    src: url("../assets/fonts/PPPangramSansRounded-Medium.otf") format("truetype");
+    src: url("../assets/fonts/PPPangramSansRounded-Light.otf") format("truetype");
   }
 
   @font-face {
@@ -68,6 +68,16 @@ body {
   .header2 {
     @apply lg:text-[3rem] lg:leading-[3rem];
   }
+  .header3 {
+    @apply lg:text-[2.5rem] lg:leading-[3rem];
+  }
+  .header4 {
+    @apply lg:text-[2rem] lg:leading-[3.25rem];
+  }
+  .header5 {
+    @apply lg:text-2xl lg:leading-6;
+  }
+
 
   .card-title {
     @apply text-[2.5rem] leading-10;
