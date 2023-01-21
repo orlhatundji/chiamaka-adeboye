@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { StaticImage } from "gatsby-plugin-image";
+import { Pagination, Navigation } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import required modules
-import { Pagination, Navigation } from "swiper";
+// Hooks
 import useWindowDimensions from "./windowDimensionHook";
 
 const OtherProjects = () => {

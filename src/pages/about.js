@@ -1,14 +1,8 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-
-// Assets
-import todlrImage from "../images/barter.png";
-import cowrywiseImage from "../images/cowrywise.png";
-import afriticketImage from "../images/afriticket.png";
 
 const IndexPage = () => (
   <Layout>

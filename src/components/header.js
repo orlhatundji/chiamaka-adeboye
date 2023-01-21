@@ -14,7 +14,10 @@ const Header = ({ siteTitle }) => (
         <li className="">
           <Link to="/about">About</Link>
         </li>
-        <li className="">Resume</li>
+        <li className="">
+          
+          <Link to="/resume">Resume</Link>
+        </li>
       </ul>
     </div>
     <div className="h-20"></div>
