@@ -318,7 +318,7 @@ const IndexPage = () => {
             to your users. Here is a link to the prototype to see how the flow
             works
           </p>
-          <div className="w-fit ml-auto mt-11">
+          {/* <div className="w-fit ml-auto mt-11">
             <button
               onClick={topFunction}
               className="ring-0 focus:ring-o outline-0 border-0"
@@ -330,10 +330,10 @@ const IndexPage = () => {
                 className="max-w-[50px] lg:max-w-[128px]"
               />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="container mt-12 max-w-[893px]">
+      <div className="container mt-20 max-w-[893px]">
         <h4 className="header4 text-center">
           Do you have an idea you think I might be interested in? Send me a
           message
