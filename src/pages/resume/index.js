@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
@@ -14,15 +14,13 @@ const IndexPage = () => {
   const [swiperRef, setSwiperRef] = useState(null);
   const nextSlide = () => swiperRef.slideNext();
   const prevSlide = () => swiperRef.slidePrev();
-  const topRef = useRef()
   const topFunction = () => {
-    // topRef.current.scrollIntoView()
     scrollTo("#top")
   };
 
   return (
     <Layout>
-      <div className="border-b border-black pb-14 mt-12" id="top">
+      <div className="border-b border-black pb-8 lg:pb-14 mt-12" id="top">
         <div className="container mt-12 pb-[14px]">
           <h2 className="header2 text-black -z-10">
             Cowrywise - Redesigning the onboarding flow to reduce dropoffs
@@ -34,14 +32,16 @@ const IndexPage = () => {
               className="max-w-[233px] mb-auto -mt-11"
             />
           </div>
-          <p className="text-primary subtitle1 mt-7 leading-[3.25rem]">
+          <p className="text-primary subtitle1 mt-7 lg:leading-[3.25rem]">
             Cowrywise is a savings and investment product that helps Nigerians
             save and invest for their goals with as little as $1. Savings
             investment plans created must be locked for a minimum of 3 months in
-            order to gain interets and enable users build better savings habits.
+            order to gain interest and enable users build better savings habits.
           </p>
-          <div className="flex gap-x-[140px] mt-[100px]">
-            <h4 className="header4 whitespace-nowrap">Project Details</h4>
+          <div className="lg:flex gap-x-[140px] mt-16 lg:mt-24">
+            <h4 className="header4 whitespace-nowrap mb-5 lg:mb-auto">
+              Project Details
+            </h4>
             <div className="">
               <h5 className="header5">My Role</h5>
               <p className="subtitle3 leading-10 mt-4">
@@ -54,7 +54,7 @@ const IndexPage = () => {
               <p className="subtitle3 leading-10 mt-4">One week</p>
               <h5 className="header5 mt-6">Team</h5>
               <p className="subtitle3 leading-10 mt-4">
-                Myself, Mobile Enginners, Product Manager, Customer Success
+                Myself, Mobile Engineers, Product Manager, Customer Success
                 team.
               </p>
             </div>
@@ -62,19 +62,19 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="border-b border-black">
-        <div className="container py-[4.5rem]">
+        <div className="container py-[2.5rem] lg:py-[4.5rem]">
           <p className="subtitle1 text-center">Problem Discovery</p>
-          <h3 className="header3 text-black leading-[70px] text-center mt-4 px-10">
+          <h3 className="header3 text-black leading-10 lg:leading-[70px] text-center mt-4 px-10">
             “ 3 out of 5 users were not able to complete the account creation
             process and that led to them dropping off.
           </h3>
         </div>
       </div>
       <div className="border-b border-black">
-        <div className="container py-[4.5rem]">
+        <div className="container py-[2.5rem] lg:py-[4.5rem]">
           <h4 className="header4 whitespace-nowrap">Why was this happening?</h4>
-          <div className="flex gap-x-12 justify-between">
-            <p className="text-primary subtitle1 mt-7 leading-[3.25rem] max-w-[517px]">
+          <div className="lg:flex gap-x-12 justify-between">
+            <p className="text-primary subtitle1 mt-7 lg:leading-[3.25rem] max-w-[517px]">
               I worked with the Customer experience team to learn about the type
               of feedback they were getting from users especially around account
               creation. After poring through the emails, social media and
@@ -82,7 +82,7 @@ const IndexPage = () => {
               pattern and it had to do with users not getting OTP’s ( One time
               Password)
             </p>
-            <p className="text-primary subtitle1 mt-7 leading-[3.25rem]">
+            <p className="text-primary subtitle1 mt-7 lg:leading-[3.25rem]">
               To ensure that users are who they say they are, users were
               required to verify their phone numbers in order to complete the
               sign up process, they had to enter their phone numbers so an OTP
@@ -95,17 +95,17 @@ const IndexPage = () => {
             </p>
           </div>
         </div>
-        <div className="container py-[4.5rem]">
+        <div className="container py-[2.5rem] lg:py-[4.5rem]">
           <h4 className="header4 whitespace-nowrap">
             Why were users not getting their OTP’s?
           </h4>
-          <p className="text-primary subtitle1 mt-7 leading-[3.25rem]">
+          <p className="text-primary subtitle1 mt-7 lg:leading-[3.25rem]">
             After I’d identified what the source of the problem was, I worked
             with the engineering team and Product Manager to learn why users
             were not getting their OTP’s and what other alternatives we could
             use to verify our users. This was the summary of my conversation;
           </p>
-          <div className="grid lg:grid-cols-2 gap-x-12 justify-between mt-8">
+          <div className="grid grid-cols-1 gap-y-7 lg:grid-cols-2 gap-x-12 justify-between mt-8">
             <div className="card p-7">
               <h4 className="text-grey header4">01</h4>
               <p className="subtitle2">
@@ -131,7 +131,7 @@ const IndexPage = () => {
       <div className="border-b border-black">
         <div className="container py-[4.5rem]">
           <p className="subtitle1 text-center">Problem Discovery</p>
-          <h3 className="header3 text-black leading-[70px] text-center mt-4 px-10">
+          <h3 className="header3 text-black leading-10 lg:leading-[70px] text-center mt-4 px-10">
             How might we increase the conversion rate during account creation?
           </h3>
         </div>
@@ -140,7 +140,7 @@ const IndexPage = () => {
       <div className="border-b border-black">
         <div className="container py-[4.5rem]">
           <h4 className="header4 whitespace-nowrap">Proposed solution</h4>
-          <p className="text-primary subtitle1 mt-7 leading-[3.25rem]">
+          <p className="text-primary subtitle1 mt-7 lg:leading-[3.25rem]">
             It was important that whatever solution I came up with allows users
             complete the account creation process seamlessly while still making
             sure that users are able to verified and collecting all the
@@ -149,10 +149,10 @@ const IndexPage = () => {
             their onboarding was done and what we could learn from them, this
             helped me come up with the following solutions.
           </p>
-          <div className="grid lg:grid-cols-2 gap-x-12 justify-between mt-8">
+          <div className="grid grid-cols-1 gap-y-7 lg:grid-cols-2 gap-x-12 justify-between mt-8">
             <div className="card p-7">
-              <h4 className="text-grey header4">01</h4>
-              <h3 className="header4">Introduction of 4 - digit PIN</h3>
+              <h4 className="text-grey header4 my-2">01</h4>
+              <h3 className="header4 my-2">Introduction of 4 - digit PIN</h3>
               <p className="subtitle2">
                 I proposed the idea of making users create a 4-digit PIN at the
                 point of account creation to verify that they are who they say
@@ -161,8 +161,8 @@ const IndexPage = () => {
               </p>
             </div>
             <div className="card p-7">
-              <h4 className="text-grey header4">02</h4>
-              <h3 className="header4">Bank Verification Number - BVN</h3>
+              <h4 className="text-grey header4 my-2">02</h4>
+              <h3 className="header4 my-2">Bank Verification Number - BVN</h3>
               <p className="subtitle2">
                 Every bank holder in Nigeria has a unique identifier called a
                 BVN that could be used to verify a users identity thereby making
@@ -175,7 +175,7 @@ const IndexPage = () => {
       </div>
       <div className="border-b border-black">
         <div className="container pt-10 pb-20 w-full ">
-          <h4 className="header4">Old Account creation flow</h4>
+          <h4 className="header4 my-2">Old Account creation flow</h4>
           <div className="flex gap-x-3 items-center my-2 ml-auto w-fit">
             <button className="" onClick={() => prevSlide()}>
               <StaticImage
@@ -223,15 +223,17 @@ const IndexPage = () => {
           </div>
 
           {/* New account creation flow */}
-          <h4 className="header4 mt-32 mb-10">New Account creation flow</h4>
-          <div className="card grid lg:grid-cols-2 gap-x-20 gap-y-28">
+          <h4 className="header4 my-2 mt-32 mb-10">
+            New Account creation flow
+          </h4>
+          <div className="card lg:grid grid-cols-1 lg:grid-cols-2 lg:gap-x-20 gap-y-28">
             <div className="flex flex-col items-center">
               <StaticImage
                 src="../../images/new_account1.png"
                 className="max-w-[288px] min-h-[582px]"
               />
               <h4 className="header4 mt-8">1.</h4>
-              <p className="subtitle1 text-center max-w-[478px]">
+              <p className="subtitle1 text-center mb-6 lg:max-w-[478px]">
                 One of our design goals at cowrywise is simple and clutter free
                 designs. On this screen, I made sure to collect only the most
                 important information that we’ll need to create the account.
@@ -243,7 +245,7 @@ const IndexPage = () => {
                 className="max-w-[288px]"
               />
               <h4 className="header4 mt-8">2.</h4>
-              <p className="subtitle1 text-center max-w-[478px]">
+              <p className="subtitle1 text-center mb-6 lg:max-w-[478px]">
                 After account creation, users had to verify their account so we
                 had this screen informing users what they were going to be doing
                 and why were performing this action.
@@ -255,7 +257,7 @@ const IndexPage = () => {
                 className="max-w-[288px]"
               />
               <h4 className="header4 mt-8">3.</h4>
-              <p className="subtitle1 text-center max-w-[478px]">
+              <p className="subtitle1 text-center mb-6 lg:max-w-[478px]">
                 Because adding your BVN was a new information, we decided to do
                 a little user education by telling users why we were colelcting
                 their BVN
@@ -267,7 +269,7 @@ const IndexPage = () => {
                 className="max-w-[288px]"
               />
               <h4 className="header4 mt-8">4.</h4>
-              <p className="subtitle1 text-center max-w-[478px]">
+              <p className="subtitle1 text-center mb-6 lg:max-w-[478px]">
                 The last stage of the account creation flow involves creating a
                 4 digit PIN
               </p>
@@ -278,7 +280,7 @@ const IndexPage = () => {
                 className="max-w-[288px]"
               />
               <h4 className="header4 mt-8">5.</h4>
-              <p className="subtitle1 text-center max-w-[478px]">
+              <p className="subtitle1 text-center mb-6 lg:max-w-[478px]">
                 We also wanted to show users feedback on the actions they just
                 completed so I had this success screen as the last step of the
                 account creation flow
@@ -286,12 +288,12 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="container py-[4.5rem]">
+        <div className="container py-[1.5rem] lg:py-[4.5rem]">
           <h4 className="header4 whitespace-nowrap">
             Impact and Lessons learnt
           </h4>
 
-          <div className="grid lg:grid-cols-2 gap-x-12 justify-between mt-8">
+          <div className="grid grid-cols-1 gap-y-7 lg:grid-cols-2 gap-x-12 justify-between mt-8">
             <div className="card p-7">
               <h3 className="header4">87%</h3>
               <p className="subtitle2">
@@ -308,7 +310,7 @@ const IndexPage = () => {
               </p>
             </div>
           </div>
-          <p className="text-primary subtitle1 mt-10 leading-[3.25rem]">
+          <p className="text-primary subtitle1 mt-10 lg:leading-[3.25rem]">
             During the course of this project, I learnt that collaboration is
             really neccessary for the success of any project no matter how small
             or insignificant they might look. I also learnt about the importance
@@ -317,15 +319,36 @@ const IndexPage = () => {
             works
           </p>
           <div className="w-fit ml-auto mt-11">
-            <button onClick={topFunction} className="ring-0 focus:ring-o outline-0 border-0">
-            <StaticImage
-              role="button"
+            <button
               onClick={topFunction}
-              src="../../images/goto_top.png"
-              className="max-w-[128px]"
-            /></button>
+              className="ring-0 focus:ring-o outline-0 border-0"
+            >
+              <StaticImage
+                role="button"
+                onClick={topFunction}
+                src="../../images/goto_top.png"
+                className="max-w-[50px] lg:max-w-[128px]"
+              />
+            </button>
           </div>
         </div>
+      </div>
+      <div className="container mt-12 max-w-[893px]">
+        <h4 className="header4 text-center">
+          Do you have an idea you think I might be interested in? Send me a
+          message
+        </h4>
+        <div className="flex items-center gap-x-5 lg:gap-x-9 mt-6 w-fit mx-auto">
+            <Link to="/">
+              <StaticImage src="../../images/email.png" className="max-w-[24px]" />
+            </Link>
+            <Link to="/">
+              <StaticImage
+                src="../../images/linkedin.png"
+                className="max-w-[24px]"
+              />
+            </Link>
+          </div>
       </div>
     </Layout>
   );

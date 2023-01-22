@@ -50,7 +50,7 @@ const IndexPage = () => (
             I have demonstrated history of delivering great experiences from
             concept till launch and throughout the product lifecycle
           </p>
-          <div className="flex items-center gap-x-9 mt-6">
+          <div className="flex items-center gap-x-5 lg:gap-x-9 mt-6 mb-6 lg:mb-0">
             <Link to="/">
               <StaticImage src="../images/email.png" className="max-w-[24px]" />
             </Link>

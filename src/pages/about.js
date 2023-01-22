@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
-    <div className="border-b border-black">
+    <div className="border-b border-black pb-20 lg:pb-48">
       <div className="container mt-12 pb-[14px]">
         <div className="">
           <h2 className="header2 text-black max-w-[766px]">

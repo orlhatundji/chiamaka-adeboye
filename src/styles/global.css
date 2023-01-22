@@ -84,14 +84,14 @@ body {
 
 
   .card-title {
-    @apply text-[2.5rem] leading-10;
+    @apply text-2xl leading-7 lg:text-[2.5rem] lg:leading-10;
   }
 
   .subtitle1 {
-    @apply lg:text-2xl lg:leading-[3rem];
+    @apply leading-9 lg:text-2xl  lg:leading-[3rem];
   }
   .subtitle2 {
-    @apply lg:text-xl lg:leading-10;
+    @apply leading-7 lg:text-xl lg:leading-10;
   }
   .subtitle3 {
     @apply lg:text-lg lg:leading-[2.38rem];
