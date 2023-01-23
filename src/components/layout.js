@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       <div className="h-screen overflow-scroll">
         <main className="overflow-scroll">{children}</main>
         <footer className="py-10 mb-20">
-          <p className="text-base leading-[4.75rem] text-center">Copyright © 2022. Made with ❤️ in Lagos.</p>
+          <p className="text-base leading-[4.75rem] text-center mb-20 lg:mb-0">Copyright © 2022. Made with ❤️ in Lagos.</p>
         </footer>
       </div>
     </>
