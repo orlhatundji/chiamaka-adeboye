@@ -44,7 +44,7 @@ const IndexPage = () => (
       <div className="container lg:flex justify-between items-center pt-14 pb-[14px]">
         <div className="">
           <h1 className="header1 text-black max-w-[766px]">
-            I’m Eniola, Product Designer from Lagos, Nigeria
+            I’m Chiamaka, Product Designer from Lagos, Nigeria
           </h1>
           <p className="text-primary subtitle2 max-w-[630px]">
             I have demonstrated history of delivering great experiences from
@@ -159,6 +159,6 @@ const IndexPage = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Eniola" description="Product Designer" />;
+export const Head = () => <Seo title="Chiamaka" description="Product Designer" />;
 
 export default IndexPage;

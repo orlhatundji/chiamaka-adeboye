@@ -354,6 +354,6 @@ const IndexPage = () => {
   );
 };
 
-export const Head = () => <Seo title="Eniola" description="Product Designer" />;
+export const Head = () => <Seo title="Chiamaka" description="Product Designer" />;
 
 export default IndexPage;

@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "powlanding",
+        bucketName: "nowlanding",
       },
     },
     'gatsby-plugin-postcss',

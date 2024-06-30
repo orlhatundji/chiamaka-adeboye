@@ -13,7 +13,7 @@ const IndexPage = () => (
             A bit about myself
           </h2>
           <p className="text-primary subtitle1 mt-5">
-            Hi, I'm Eniola. ANY - UH-LAH (Pronounce). I’m a Lagos-based
+            Hi, I'm Chiamaka. ANY - UH-LAH (Pronounce). I’m a Lagos-based
             designer, curious and passionate about Digital products, Literature,
             Travel, Women’s rights, Tik-tok videos, Architecture, minimalism,
             Technology, Music, and shopping.
@@ -46,6 +46,6 @@ const IndexPage = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Eniola" description="Product Designer" />;
+export const Head = () => <Seo title="Chiamaka" description="Product Designer" />;
 
 export default IndexPage;
