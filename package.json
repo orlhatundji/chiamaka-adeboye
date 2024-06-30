@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "chiamaka-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A personal portfolio website",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
@@ -20,6 +20,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "gatsby-plugin-postcss": "^6.3.0",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "tailwindcss": "^3.2.4"
@@ -32,7 +33,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "deploy": "gatsby-plugin-s3 deploy",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
